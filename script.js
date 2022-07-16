@@ -1,6 +1,6 @@
 
 let input = document.querySelector(".input")
-let findEl = document.getElementById("find")
+let form = document.querySelector(".search-bar")
 let result = document.getElementById("search-result")
 
 function fetchData(searchKey){
@@ -25,7 +25,8 @@ function fetchData(searchKey){
 }
 
 
-findEl.addEventListener("click", ()=> {
+form.addEventListener("submit", (e)=> {
+    e.preventDefault()
     if(input.value !== "") {
        fetchData(input.value)
     }
