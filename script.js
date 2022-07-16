@@ -1,16 +1,3 @@
-// const titleEl = document.querySelector(".article-title")
-// const descriptionEl = document.querySelector(".article-description")
-
-// var search = window.location.search.substr(1)
-
-// if (search) {
-//     let API_URL = "https://en.wikipedia.org/w/api.php?format=json&action=query&origin=*&prop=extracts&exintro&explaintext&redirects=1&titles=" + search
-
-//     fetch(API_URL)
-//     .then(response => {
-//         response = response.query.pages
-//     })
-// }
 
 let input = document.querySelector(".input")
 let findEl = document.getElementById("find")
